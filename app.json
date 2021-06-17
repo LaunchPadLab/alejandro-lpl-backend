@@ -1,6 +1,6 @@
 {
-  "name": "",
-  "description": "",
+  "name": "Alejandro's dev on-boarding",
+  "description": "Project for my backend on-boarding",
   "scripts": {
     "postdeploy": "bundle exec rake db:migrate && rake db:seed"
   },
