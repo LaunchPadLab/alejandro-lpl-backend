@@ -12,6 +12,11 @@ class Api::V1::TodosController < ApiController
         json_with todo
     end
 
+    def show
+        todo = Todo.find(params[:id])
+        json_with todo
+    end
+
     private
 
     def todo_params
