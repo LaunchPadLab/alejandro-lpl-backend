@@ -23,6 +23,12 @@ class Api::V1::TodosController < ApiController
         json_with todo
     end
 
+    def destroy
+        todo = Todo.find(params[:id])
+        todo.destroy
+        json_empty
+    end
+
     private
 
     def todo_params
